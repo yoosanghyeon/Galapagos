@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "219349586873",
+    "firebase_url": "https://galapagos-68ad4.firebaseio.com",
+    "project_id": "galapagos-68ad4",
+    "storage_bucket": "galapagos-68ad4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219349586873:android:2a87171bf00906d4",
+        "android_client_info": {
+          "package_name": "com.galapagos.galapagos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219349586873-iungqm62g1niu16ioo2ee807dp5vu85t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.galapagos.galapagos",
+            "certificate_hash": "4F49346B3A525268A3DAD887EF4236B240984BE0"
+          }
+        },
+        {
+          "client_id": "219349586873-l86a5mijpqa6ghqpg71lvid0f6aj1kap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHZXRq5VanpKpj6p0J0XLAy5J7R-RbHtg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219349586873-l86a5mijpqa6ghqpg71lvid0f6aj1kap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

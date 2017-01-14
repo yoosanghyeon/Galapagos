@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 상현오빠가 빼라함 일단 보류-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        app:cardCornerRadius="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_userimage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/user_img_50dp" />
+
+            <TextView
+                android:id="@+id/text_feed_username"
+                android:layout_width="42.3dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="15dp"
+                android:text="김예지"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/btn_delete_dialog_close"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/close_icon"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="129dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="39dp"
+                android:text="2016.11.15 10:03 게시"
+                android:textColor="@color/colorMainGray1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_feed_content"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="73dp"
+                android:text="안녕하세요 T아카데미 전문가 과정 안드로이드반 김예지, 유상현 서버반의 박주혁, 양인호 입니다 먼저 목차는 다음과 같습니다 저희 앱의 개요를 간략하게 설명드리면 저희 갈라파고스는 낯선 지역이나 자주 찾는 지역에 대한 정보를 현지인들과 소통하고 공유하는 위치기반 SNS입니다 다음으로는 블라블라"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_feed_like_count"
+                android:layout_width="112.3dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/text_feed_content"
+                android:layout_marginLeft="219.7dp"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:text="좋아요 27,정정요청 0"
+                android:textColor="@color/colorMainGray1"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/btn_feed_like"
+                android:layout_width="70dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/text_feed_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/like_button_un_s"
+                android:scaleType="center" />
+
+            <ImageButton
+                android:id="@+id/btn_fixreq"
+                android:layout_width="70dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/text_feed_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="179dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/request_button_un_s"
+                android:scaleType="center" />
+
+            <ImageButton
+                android:id="@+id/btn_modify"
+                android:layout_width="70dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/text_feed_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="262dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/modify_button_un_s"
+                android:scaleType="center" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

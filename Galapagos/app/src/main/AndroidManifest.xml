@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.galapagos.galapagos">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".GalaApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/galaAppTheme">
+        <activity
+            android:name=".GalaSplashscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GalaMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FeedWriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotifiDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileInfoDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileInfoModifyDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LicenseInfoDialogActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".FeedActivity" />
+        <activity
+            android:name=".QuestionDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/galaDialogStyle" />
+        <activity
+            android:name=".CatChoiceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/galaDialogStyle" />
+        <activity
+            android:name=".CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistLocationWriteActivity"
+            android:label="@string/title_activity_regist_location_write"
+            android:screenOrientation="portrait"
+            android:theme="@style/galaAppTheme" />
+        <activity
+            android:name=".UserRegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.galapagos.galapagos.common.GalaGlideModule"
+            android:value="GlideModule" />
+
+        <service
+            android:name=".GalaLocationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.galapagos.galapagos.action.PER_LOCATION" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyProjectFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FCMPushMessageService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".LocationPermissionActivity"
+            android:label="@string/title_activity_location_permission"
+            android:theme="@style/galaAppTheme" />
+        <activity
+            android:name=".FeedDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ModifyActivity"></activity>
+    </application>
+
+</manifest>

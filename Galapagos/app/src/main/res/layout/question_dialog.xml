@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/info_pop_area"
+    >
+
+    <ImageView
+        android:id="@+id/btn_question_dialog_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="center"
+        android:src="@drawable/close_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="257dp"
+        />
+
+    <ImageView
+        android:id="@+id/btn_info_call"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/call_button_un"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="128dp"
+        android:layout_marginLeft="42dp"
+        />
+
+    <ImageView
+        android:id="@+id/btn_send_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/mall_button_un"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="128dp"
+        android:layout_marginLeft="170.3dp"
+        />
+
+
+</RelativeLayout>

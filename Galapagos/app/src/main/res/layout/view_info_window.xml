@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--GalaPOI view-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardPreventCornerOverlap="false"
+    app:cardCornerRadius="18dp"
+    >
+
+<FrameLayout
+    android:id="@+id/frame_category_poi"
+    android:background="@drawable/gala_poi_category_others"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:maxLines="3"
+        android:padding="10dp"
+        android:id="@+id/gala_info_marker"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+</FrameLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Galapagos</string>
+    <string name="title_activity_regist_location_write">RegistLocationWriteActivity</string>
+    <string name="title_activity_location_permission">LocationPermissionActivity</string>
+</resources>

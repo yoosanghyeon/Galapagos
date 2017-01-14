@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- 툴바 -->
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:background="@drawable/appbar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:completionThreshold="1"
+            android:id="@+id/edit_location_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="67dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/local_searchbar"
+            android:hint="현재 위치 없음"
+            android:paddingBottom="7dp"
+            android:paddingLeft="41dp"
+            android:paddingTop="6dp"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"/>
+
+
+        <EditText
+            android:id="@+id/edit_contents_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="67dp"
+            android:layout_marginTop="53dp"
+            android:background="@drawable/contents_searchbar"
+            android:hint="컨텐츠를 검색하세요"
+            android:paddingBottom="7dp"
+            android:paddingLeft="41dp"
+            android:paddingTop="6dp"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_navi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="47dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/hamburger_button"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+</android.support.design.widget.AppBarLayout>

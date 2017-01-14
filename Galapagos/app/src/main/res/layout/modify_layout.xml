@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 수정하기  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eceef0"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/modify_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <RelativeLayout
+                android:id="@+id/modify_selected_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/category0_frame">
+
+                <EditText
+                    android:lines="1"
+                    android:id="@+id/edit_modify_tag"
+                    android:layout_width="231dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edit_conner"
+                    android:hint="컨텐츠를 입력하세요."
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:scrollHorizontally="false"
+                    android:textSize="15sp" />
+
+                <ImageButton
+
+                    android:id="@+id/modify_cat_select"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="282dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/category0_select_button"
+                    android:scaleType="centerCrop" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_modify_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/user_img_50dp" />
+
+                <TextView
+                    android:id="@+id/text_modify_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="96dp"
+                    android:text="Name"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/text_modify_user_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_modify_user_name"
+                    android:layout_marginLeft="96dp"
+                    android:text="지역등록: 없음"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/edit_modify_content"
+                android:layout_width="320dp"
+                android:layout_height="184.3dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:maxWidth="5.0dip"
+                android:minWidth="10.0dip"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:padding="10dp"
+                android:id="@+id/pic_modify_upload_layout"
+                android:layout_width="320dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="0.73"
+                android:background="@drawable/textlinebold"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_marginLeft="72.5dp"
+                    android:id="@+id/pic_modify_upload_view1"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_modify_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/location_button_un" />
+
+
+                <ImageButton
+                    android:id="@+id/btn_modify_pic"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/photo_button_un" />
+
+
+                <ImageButton
+                    android:id="@+id/btn_modify_anonymity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/anonymity_button_un" />
+
+
+                <ImageButton
+                    android:id="@+id/btn_modify_send_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/modify_button_un_s" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

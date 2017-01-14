@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--게시물 작성 화면에서 카테고리 선택-->
+<RelativeLayout
+    android:gravity="top"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_category_select"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="113dp"
+        android:id="@+id/btn_cat8"
+        android:background="@drawable/pop_category0_button" />
+
+
+    <Button
+        android:id="@+id/btn_cat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/btn_cat8"
+        android:background="@drawable/pop_category1_button" />
+
+    <Button
+        android:id="@+id/btn_cat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cat1"
+        android:background="@drawable/pop_category2_button" />
+
+    <Button
+        android:id="@+id/btn_cat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cat2"
+        android:background="@drawable/pop_category3_button" />
+
+    <Button
+        android:id="@+id/btn_cat4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cat3"
+        android:background="@drawable/pop_category4_button" />
+
+    <Button
+        android:id="@+id/btn_cat5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cat4"
+        android:background="@drawable/pop_category5_button" />
+
+    <Button
+        android:id="@+id/btn_cat6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cat5"
+        android:background="@drawable/pop_category6_button" />
+
+    <Button
+        android:layout_marginLeft="257dp"
+        android:id="@+id/btn_delete_dialog_close"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="44.7dp"
+        android:background="@drawable/close_icon" />
+
+
+</RelativeLayout>
+
+

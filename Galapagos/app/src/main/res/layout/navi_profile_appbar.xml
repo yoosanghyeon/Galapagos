@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/appbar_base">
+
+        <TextView
+            android:id="@+id/text_appbar_title"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:text="프로필 정보"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13.3dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/btn_appbar_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/close_icon_w"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14.7dp"
+
+            />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/navi_profile_item" />
+
+</LinearLayout>

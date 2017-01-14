@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/notifi_license_appbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/appbar_base">
+
+        <TextView
+            android:id="@+id/text_appbar_title"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:text="공지사항"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13.3dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/btn_appbar_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/close_icon_w"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14.7dp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        app:cardCornerRadius="12dp">
+
+        <TextView
+            android:id="@+id/text_notifi_licese_item"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"
+            android:text="갈라파고스의 앱이 출시 되었습니다.                                                               "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

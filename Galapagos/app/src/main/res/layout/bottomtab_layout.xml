@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- 바텀 탭 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    app:layout_gravity="bottom"
+    app:layout_behavior="com.galapagos.galapagos.QuickReturnFooterBehavior"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56.3dp"
+        android:background="@drawable/buttom_tapbar_base"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btn_feed_tab"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="3.3dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:scaleType="center"
+            android:src="@drawable/feed_tapbar_icon_use" />
+
+        <ImageButton
+            android:id="@+id/btn_map_tab"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="3.3dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:scaleType="center"
+            android:src="@drawable/local_search_tapbar_icon_un" />
+
+        <ImageButton
+            android:id="@+id/btn_favorite_tab"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="3.3dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:scaleType="center"
+            android:src="@drawable/star_search_tapbar_icon_un" />
+
+
+    </LinearLayout>
+</FrameLayout>

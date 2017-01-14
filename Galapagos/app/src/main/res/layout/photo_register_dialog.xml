@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/photo_uplode_pop_area"
+    >
+
+    <ImageView
+        android:id="@+id/btn_photo_dialog_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="257dp"
+        android:layout_marginTop="46dp"
+        android:scaleType="center"
+        android:src="@drawable/close_icon" />
+
+    <ImageView
+        android:id="@+id/btn_pic_capture_add"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="128dp"
+        android:scaleType="center"
+        android:src="@drawable/photo_button_un" />
+
+    <ImageView
+        android:id="@+id/btn_galler_add"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="170.3dp"
+        android:layout_marginTop="128dp"
+        android:scaleType="center"
+        android:src="@drawable/gallery_button_un" />
+
+</RelativeLayout>

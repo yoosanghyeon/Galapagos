@@ -1,0 +1,6 @@
+<resources>
+<!--
+TODO: YooSanghyeon API key.
+-->
+<string name="google_maps_key">AIzaSyBehoyJLgw-L_DU47FCvl_YYWZ7r4X36pc</string>
+</resources>

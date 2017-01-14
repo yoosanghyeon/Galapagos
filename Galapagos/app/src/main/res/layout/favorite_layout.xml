@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 세번째 페이지 즐겨찾기 화면 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/favorites_list_tabbar"
+        android:fillViewport="true"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/colorMain"
+        app:tabTextAppearance="@style/tabTextSize"
+        app:tabTextColor="@color/colorMainGray2" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottomtab_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/bottomtab_layout" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

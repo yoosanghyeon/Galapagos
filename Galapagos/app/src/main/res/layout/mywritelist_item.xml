@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 내가 작성한 게시글 아이템 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_write_list"
+        android:layout_width="match_parent"
+        card_view:cardElevation="4dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="14dp"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/mywrite_relative_layout"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_write_category"
+                android:layout_width="344dp"
+                android:layout_height="24dp"
+                android:src="@drawable/category0"
+                android:scaleType="fitXY"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/text_write_tag"
+                android:text="#tag"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:paddingTop="2dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="146.7dp"
+                android:layout_alignParentTop="true" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_write_userimage"
+                android:layout_below="@+id/text_write_tag"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/user_img_66dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="12dp" />
+
+            <TextView
+                android:id="@+id/text_write_username"
+                android:text="유상현"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="39dp" />
+
+            <ImageView
+                android:id="@+id/btn_write_delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14.3dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/close_icon"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/text_write_date"
+                android:text="2016.11.15 10:03 게시"
+                android:textSize="12sp"
+                android:textColor="@color/colorMainGray1"
+                android:layout_width="129dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="63dp"
+                android:layout_marginLeft="96dp"
+                android:layout_alignParentLeft="true" />
+
+            <LinearLayout
+                android:id="@+id/board_write_pic_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="113dp"
+                android:visibility="gone"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/img_write_board_pic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/board_write_text_content_layout"
+                android:layout_below="@+id/board_write_pic_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:clickable="true"
+                >
+
+                <TextView
+                    android:id="@+id/text_write_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_write_comment_count"
+                android:layout_below="@+id/board_write_text_content_layout"
+                android:text="댓글 3"
+                android:textSize="12sp"
+                android:textColor="@color/colorMainGray1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="300.3dp"
+                />
+
+            <ImageView
+                android:id="@+id/btn_write_modify"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/board_write_text_content_layout"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="179dp"
+                android:layout_marginTop="46dp"
+                android:src="@drawable/modify_button_un_s"
+                android:scaleType="center" />
+
+            <ImageView
+                android:id="@+id/btn_write_comment"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/board_write_text_content_layout"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="262dp"
+                android:layout_marginTop="46dp"
+                android:src="@drawable/comment_button_un_s"
+                android:scaleType="center" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
